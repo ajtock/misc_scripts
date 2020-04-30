@@ -62,5 +62,5 @@ cd ~/analysis/$NextSeqProj
 ## Path to python3 is specified because Python 3.5+ required 
 /applications/anaconda/anaconda3/bin/python3 ~/tools/pooling-nextseq-fastq/generate_config.py --dir ~/$NextSeqDir
 
-snakemake -s ~/tools/pooling-nextseq-fastq/Snakefile
+/applications/anaconda/anaconda3/bin/snakemake -s ~/tools/pooling-nextseq-fastq/Snakefile
 

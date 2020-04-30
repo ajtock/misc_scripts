@@ -1,0 +1,14 @@
+# Insert 1st column containing sequential numbers:
+awk '{printf("%010d %s\n", NR, $0)}' example.txt
+
+# To use awk to convert a Windows file to Unix, enter:
+awk '{ sub("\r$", ""); print }' winfile.txt > unixfile.txt
+
+# Or, if end of line $ not present
+awk '{ gsub("\r", "\n"); print }' winfile.txt > unixfile.txt
+
+# To convert a Windows text file to a Unix text file using Perl, enter:
+perl -p -e 's/\r$//' < winfile.txt > unixfile.txt
+
+ifconfig
+route
